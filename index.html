@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Biencyrcode</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+
+    <section class="header">
+        
+        <nav>
+           
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./course.html">COURSE</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+                <i class="fa fa-bars"onclick="showMenu()"></i>
+
+            </div>
+            
+        </nav>
+<div class="text-box">
+    <h1>World's Best Freelance Company</h1>
+    <p>Making the web more beautiful, fast, and open through great typography.</p>
+    <a href="https://mail.google.com"class="hero-btn">Visit Us To Know More></a>
+
+
+    </section>
+
+
+<!---COURSE--> 
+
+<section class="Services">
+    <h1>Services We Offer</h1>
+    <p>This is a tutoring facility available in the cyber rostrum. This academy was founded by three well-qualified and highly experienced teachers. Top Tutor Academy is a fruitful outcome of the intense passion for effective teaching which brings about Constructive and Progressive development in children. The pandemic and its after effects have also severely affected the teaching – learning process and we hope to offer a remedy to the impairment through our Academy.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Student centered tutoring </p>
+
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>
+                Customized assistance </p>
+
+        </div>
+        <div class="course-col">
+            <h3>Postgraduate</h3>
+            <p>
+                Flexible Schedules to suit examination schedules</p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+<section class="campus">
+    <h1> Our Online Campus</h1>
+    <p>Learning is a ceaseless process for evolving into intellectual professionals with healthy minds. Hence successful and fruitful learning requires dynamic and evolving guidance at all levels. Regular schooling comes with some advantages as well as some limitations</p>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-----Javascript for toogle menu-->
+    <script>
+        var navLinks= document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

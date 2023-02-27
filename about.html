@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times"></i>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./course.html">COURSE</a></li>
+                        <li><a href="./blog.html">BLOG</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                    </ul>
+
+                <i class="fa fa-bars"></i>
+
+            </div>
+        </nav>
+        
+        <div class="about">
+            <nav>
+                
+                <div class="main"> 
+
+                    <div class="about-text">
+                        <h1>About Us</h1>
+                        <h5>Developer <span> $ Designer</span></h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum magnam repudiandae praesentium dicta, possimus ab adipisci. Rem laboriosam cumque cupiditate natus eaque, dolore sequi vel obcaecati reiciendis iusto quod dolorum.</p>
+                        <a href="https://wa.me/+254700274853">
+                            <button type="button"> Let's Talk</button>
+
+                        </a> 
+                        
+                    </div>  
+                </div>
+            </nav>
+    
+        </div>
+
+    </section>
+        
+    
+        
+    
+        
+        
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    }
+.about{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Abt2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.about img{
+    width: 420px;
+    height:auto;
+
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between ;
+    align-items:center;
+
+}
+.about-text h1{
+    color: #fff;
+    font-size:80px ;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: #fff;
+    font-size:25px ;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+span{
+    color: #f9004d;
+}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background:#f9004d ;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition:4s ;
+}
+button:hover{
+    background: transparent ;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Home.JPG);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+img{
+    margin: 0px;
+    width: 20px;
+    height:20px;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between ;
+    align-items:center;
+}
+.nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position:relative;
+}
+.nav-links ul li {
+    color:aliceblue;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 5ms;
+}
+.nav-links ul li:hover::after{
+    width: 100px;
+}
+</style>
+</body>
+</html>

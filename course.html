@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>course</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+
+        <nav>
+           
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./course.html">COURSE</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+
+
+        <div class="text-box">
+            <h1>World's Best Freelance Company</h1>
+            <p>Making the web more beautiful, fast, and open through great typography.</p>
+            <a href=""class="hero-btn">Visit Us To Know More></a>
+        
+        
+            </section>
+        
+        
+        <!---COURSE--> 
+        
+        <section class="Services">
+            <h1>Services We Offer</h1>
+            <p>This is a tutoring facility available in the cyber rostrum. This academy was founded by three well-qualified and highly experienced teachers. Top Tutor Academy is a fruitful outcome of the intense passion for effective teaching which brings about Constructive and Progressive development in children. The pandemic and its after effects have also severely affected the teaching – learning process and we hope to offer a remedy to the impairment through our Academy.</p>
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>Student centered tutoring </p>
+        
+                </div>
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>
+                        Customized assistance </p>
+        
+                </div>
+                <div class="course-col">
+                    <h3>Postgraduate</h3>
+                    <p>
+                        Flexible Schedules to suit examination schedules</p>
+        
+                </div>
+        
+        
+            </div>
+        
+        
+        </section>
+        
+        <section class="campus">
+            <h1> Our Online Campus</h1>
+            <p>Learning is a ceaseless process for evolving into intellectual professionals with healthy minds. Hence successful and fruitful learning requires dynamic and evolving guidance at all levels. Regular schooling comes with some advantages as well as some limitations</p>
+        
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-----Javascript for toogle menu-->
+            <script>
+                var navLinks= document.getElementById("navLinks")
+                function showMenu(){
+                    navLinks.style.right="0";
+                }
+                function hideMenu(){
+                    navLinks.style.right="-200px";
+                }
+            </script>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Course.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+img{
+    max-width: 20%;
+    max-height: 10%;
+    margin: 20px;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between ;
+    align-items:center;
+}
+.nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position:relative;
+}
+.nav-links ul li {
+    color:aliceblue;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 5ms;
+}
+.nav-links ul li:hover::after{
+    width: 100px;
+}
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #fff ;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav.fa{
+    display: none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;}
+    .nav-links ul li{
+        display: block;}
+    .nav-links{
+        position: absolute;
+        background-color:#f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:-200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav.fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px; 
+        cursor: pointer;
+    }
+    .nav-links{
+        padding:30px ;
+    }
+}
+/*---COURSE--*/
+.Services{
+    width: 88%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px ;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600; 
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-shrink: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0,2) ;
+}
+@media(max-width: 700px){
+    .row{
+      flex-direction: column;  
+    }
+}
+.campus{
+    width: 88%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px ;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600; 
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+    </style>
+</body>
+</html>
